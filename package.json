@@ -1,0 +1,33 @@
+{
+  "name": "kafka-proxy",
+  "version": "1.0.0",
+  "scripts": {},
+  "description": "WebSockets based proxy for Kafka",
+  "author": "lawrips <lawrips@microsoft.com>",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "no-kafka": "^2.5.5",
+    "path-to-regexp": "^1.2.1",
+    "ws": "^1.0.1"
+  },
+  "main": "server.js",
+  "devDependencies": {
+    "commander": "^2.9.0",
+    "should": "^9.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/kafka-proxy-ws.git"
+  },
+  "keywords": [
+    "kafka",
+    "proxy",
+    "reverse proxy",
+    "ws",
+    "websockets",
+    "websocket",
+    "socket",
+    "sockets"
+  ],
+  "license": "MIT"
+}
