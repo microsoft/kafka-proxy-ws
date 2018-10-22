@@ -1,4 +1,4 @@
-#kafka-proxy
+# kafka-proxy
 
 A robust, scalable, high performance WebSockets based proxy for Kafka. 
 
@@ -17,7 +17,7 @@ kafkaProxy.listen();
 ## Why a proxy for Kafka? 
 This library adds a few features that Kafka itself doesn’t natively support such as easy connectivity to Kafka over standard web protocols and a central point of management for offsetting, logging, alerting. These capabilities aim to increase agility while in development and can also prove useful in production.    
 
-##Features
+## Features
 * Enables connectivity to Kafka via WebSockets, leveraging all their benefits such as performance, security, cross-platform, etc. For example, runs over HTTP(S), making it easy to connect to Kafka through a firewall without having to expose the broker address / ports 
 * Any standard web socket library should work (we test / runn with the excellent [ws](https://www.npmjs.com/package/ws) library in production)
 * Multi tenant. A single proxy can handle many incoming clients / web sockets connections. Client uniqueness is maintained via the topic / consumer group / partition combo. 
@@ -27,7 +27,7 @@ This library adds a few features that Kafka itself doesn’t natively support su
 * High performance. Tested locally on a quad core PC at 30k+ messages / second
 * Built on top of the excellent [no-kafka](https://www.npmjs.com/package/no-kafka) library (enabling connection directly to Kafka brokers), so kafka-proxy inherits the ability to set throughput rate (e.g. # of bytes per batch of messages, delay between messages). 
 
-##Usage
+## Usage
 ### Server
 First, create a server which will connect to your Kafka broker(s) and also listening for any incoming web socket connections:
 
